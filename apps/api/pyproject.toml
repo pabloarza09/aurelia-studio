@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "aurelia-api"
+version = "0.1.0"
+description = "Aurelia OS - API Backend"
+authors = ["Aurelia Studio"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.0"
+uvicorn = { version = "^0.24.0", extras = ["standard"] }
+sqlalchemy = "^2.0.0"
+alembic = "^1.12.0"
+pydantic = "^2.0.0"
+pydantic-settings = "^2.0.0"
+psycopg2-binary = "^2.9.0"
+redis = "^5.0.0"
+python-dotenv = "^1.0.0"
+python-multipart = "^0.0.6"
+python-jose = { version = "^3.3.0", extras = ["cryptography"] }
+passlib = { version = "^1.7.4", extras = ["bcrypt"] }
+loguru = "^0.7.0"
+tenacity = "^8.2.0"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+pytest-asyncio = "^0.21.0"
+httpx = "^0.25.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src --cov-report=html --cov-report=term-missing"
+markers = [
+    "unit: unit tests",
+    "integration: integration tests",
+    "slow: slow tests"
+]
+
+[tool.coverage.run]
+branch = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
