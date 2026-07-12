@@ -1,0 +1,31 @@
+# ==============================================================================
+# AURELIA OS - CONFIGURACIÓN GLOBAL DE ENTORNO
+# ==============================================================================
+
+# Entorno de ejecución (development, staging, production)
+NODE_ENV=development
+PYTHON_ENV=development
+
+# ------------------------------------------------------------------------------
+# BACKEND (FastAPI - apps/api)
+# ------------------------------------------------------------------------------
+# Conexión principal a la base de datos PostgreSQL
+DATABASE_URL=postgresql://aurelia_user:aurelia_secure_pass@localhost:5432/aurelia_db
+
+# Configuración de caché y colas de mensajes (Redis)
+REDIS_URL=redis://localhost:6379/0
+
+# ------------------------------------------------------------------------------
+# FRONTEND (Next.js 14 - apps/dashboard)
+# ------------------------------------------------------------------------------
+# URL pública del backend que consumirá el cliente de Next.js
+NEXT_PUBLIC_API_URL=http://localhost:8000
+
+# ------------------------------------------------------------------------------
+# IA & AGENTES (Servicios Core)
+# ------------------------------------------------------------------------------
+# Clave de API para el OpenAI Agents SDK utilizado por tus agentes autónomos
+OPENAI_API_KEY=tu_clave_secreta_aquí
+
+# Webhook o URL base para la automatización de flujos de trabajo en n8n
+N8N_WEBHOOK_URL=http://localhost:5678/webhook/

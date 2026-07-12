@@ -1,0 +1,6 @@
+# Bloquear credenciales reales
+.env
+.env.local
+
+# Permitir únicamente la plantilla de ejemplo
+!.env.ejemplo
