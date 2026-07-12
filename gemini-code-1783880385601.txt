@@ -1,0 +1,13 @@
+[research-agent] ──> Descubre tendencia del "Life Planner 2026"
+       │
+       ▼
+[product-agent]  ──> Genera la estructura PDF interactiva + Copys de venta
+       │
+       ▼
+[orchestrator]   ──> Compila archivos en /packages y conecta las APIs externas
+       │
+       ▼
+[Omnicanalidad]  ──> Publicación simultánea en Etsy, Gumroad y Payhip
+       │
+       ▼
+[ceo-agent]      ──> Monitorea ventas en Aurelia Analytics y recalcula estrategias
